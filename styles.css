@@ -5,13 +5,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .container {
     background-color: #e8ebee;
     color: black;
-    padding: 3rem;
+    padding: 4rem;
+    margin-left: 10%;
+    width: 55%;
+    margin-right: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +28,7 @@ body {
     padding: 2rem;
     grid-template-columns: auto auto;
     row-gap: 1rem;
-    column-gap: 3rem;
+    column-gap: 1rem;
 }
 
 #copy,
@@ -34,7 +37,7 @@ body {
     box-sizing: border-box;
     background-color: #482ff7;
     color: #ffffff;
-    width: 180px;
+    width: 127px;
     min-height: 44px;
     font-size: 1rem;
     font-family: "Jost", sans-serif;
