@@ -68,3 +68,13 @@ body {
     line-height: 1.5;
     box-shadow: inset 4px 4px 8px #caced1, inset -4px -4px 8px white;
 }
+
+input#characterAmountNumber {
+    border: none;
+    border-radius: 1rem;
+    padding: .4rem;
+    box-shadow: inset 4px 4px 8px #caced1, inset -4px -4px 8px white;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: .5rem;
+}
