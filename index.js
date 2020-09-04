@@ -8,6 +8,20 @@ const form = document.getElementById('passwordGeneratorForm')
 const passwordDisplay = document.getElementById('passwordDisplay')
 
 
+const copyButton = document.getElementById("copy");
+
+const copyText = (e) => {
+    window.getSelection().selectAllChildren(passwordDisplay);
+    document.execCommand("copy");
+};
+
+if (copyButton)
+    copyButton.addEventListener("click", (e) => {
+        e.preventDefault()
+        copyText(e)
+    })
+
+
 
 
 function getPassword(characterAmount, includeUppercase, includeNumbers, includeSymbols) {
@@ -34,7 +48,7 @@ function getPassword(characterAmount, includeUppercase, includeNumbers, includeS
     } else if (includeNumbers) {
         chars = lowerChars + numChars
     } else if (includeSymbols) {
-        chars = symbolChars
+        chars = symbolCharss
     } else {
         chars = lowerChars
     }
@@ -69,13 +83,3 @@ form.addEventListener('submit', e => {
     passwordDisplay.innerText = password
 
 })
-
-const copyToClipboard = str => {
-    passwordDisplay.setAttribute('readonly', '')
-    passwordDisplay.style.position = 'absolute'
-    passwordDisplay.style.left = '-999px'
-    document.body.appendChild(passwordDisplay)
-    passwordDisplay.select();
-    document.execCommand('copy')
-    document.body.removeChild(passwordDisplays)
-}

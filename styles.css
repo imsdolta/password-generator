@@ -1,27 +1,67 @@
 body {
-    background-color: #333;
+    background-color: #caced1;
     color: white;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .container {
-    background-color: #000000;
+    background-color: #e8ebee;
+    color: black;
     padding: 3rem;
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
+    box-shadow: 13px 13px 20px #caced1, -13px -13px 20px white;
 }
 
 .form {
     display: grid;
+    padding: 2rem;
     grid-template-columns: auto auto;
     row-gap: 1rem;
     column-gap: 3rem;
+}
+
+#copy,
+#btn {
+    position: relative;
+    box-sizing: border-box;
+    background-color: #482ff7;
+    color: #ffffff;
+    width: 180px;
+    min-height: 44px;
+    font-size: 1rem;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+#passwordDisplay {
+    box-sizing: border-box;
+    background-color: white;
+    font-family: monospace;
+    color: black;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    box-shadow: inset 4px 4px 8px #caced1, inset -4px -4px 8px white;
 }
